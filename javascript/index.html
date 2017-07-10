@@ -1,11 +1,12 @@
 <html>
-  <header> test
-  </header>
+<header> test
+</header>
+
 <body>
 
   <input type="button" id="clock" size="48" />
 
-  <br />
+  <br/>  
 
   <button onclick="printInt()">Print Int</button>
 
@@ -17,12 +18,10 @@
       document.getElementById("clock").value = new Date()
     }
 
-    function printInt(){
-      for(var i = 0; i < 5; i++) {
+    function printInt() {
+      for (var i = 0; i < 5; i++) {
         alert("alert: " + i);
       }
-    
-
   </script>
   </form>
   <button onclick="int=window.clearInterval(int)">Stop interval</button>
