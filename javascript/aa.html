@@ -31,7 +31,7 @@
 
     <style type="text/css">
         p {
-            color: yellow
+            color: #666666
         }
 
         h1 {
@@ -88,7 +88,63 @@
     <form name="input" action="runoob.com" method="get">
         Username: <input type="text" name="user">
         <input type="submit" value="submit">
-        </form>
+    </form>
+    <iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+    <p> <a href="http://www.runoob.com" tarfet="iframe_a">RUNOOB.COM</a></p>
+    <p><b>注意：</a> 因为a标签的 target 属性是名为 iframe_a 的 iframe 框架，所以在点击链接时页面会显示在 iframe 框架中。</p>
+        <iframe src="demo_iframe.htm" sidth="200" height="200"></iframe>
+        <p>一些旧的浏览器不支持 iframe。</p>
+        <p>如果浏览器不支持 iframe 则不会显示。</p>
+        <iframe src="demo_iframe.htm" width="200" height="200" iframeboder="0">
+            <p>该浏览器不支持 iframe。</p>
+        </iframe>
+        <p style="background-color: #fff000">
+        网页无法打开
+        </p>
+    <p style="background-color: rgb(0,233,255)">
+        周五工作日
+    </p>
+    <p style="background-color: red;text-align:center">
+        绿色健康
+        </p>
+    <script>
+        document.write("hello world!")
+</script> <br>
+
+  <script>
+        document.write("hello world!")
+</script>
+<noscript>抱歉，你的浏览器不支持 javascript！</noscript>
+<p>不支持 javascript 的浏览器会使用  &It;noscript&gt; 元素中定义的内容来替代！</p>
+<p> JavaScript能够直接写入 HTML 输出流红；</p>
+<script>
+    document.write("<h1>一级标题</h1>");
+    document.write("<p>这是一个段落</p>");
+</script>
+<br>
+<h1>我的第一个 javascript </h1>
+<p id="demo">
+    javascript 可以触发时间，就像按钮点击
+    </p>
+<script>
+    function myFunction()
+    {
+        document. getElementById("demo"). innerHTML="hello world";
+    }
+</script>
+<button type="button" onclick="myFunction()">点我</button>
+
+<p id="demo">
+    javascript 能改变 HTML 元素的样式
+    </p>
+<script>
+    function myFunction()
+    {
+        x=document. getElementById("demo")
+        x.style.color="#ff0000";
+    }
+</script>
+<button type="button" onclick="myFunction()">点击这里</button>
 </body>
 
 </html>
