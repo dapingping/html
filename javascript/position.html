@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS定位</title>
+    <style>
+    #f1{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        float: left;
+        position: relative;
+        top: 100px;
+        bottom: 100px;
+        left: 100px;
+        right: 100px;
+    }
+    #f2{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(110, 180, 247);
+        float: left;
+        position: fixed;
+        top: 200px;
+    }
+    #f3{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(97, 112, 247);
+        float: left;
+        position: relative;
+        top: 100px;
+        left: 100px;
+    }
+    #f4{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(124, 125, 134);
+        position: absolute;
+        top: 100px;
+        /* bottom: 100px; */
+        left: 100px;
+        /* right: 100px; */
+    }
+    </style>
+</head>
+<body>
+<div id="f1">浮动1</div>
+<div id="f2">浮动2</div>
+<div id="f3">
+<div id="f4">浮动4</div>
+<div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</div>
+</body>
+</html>

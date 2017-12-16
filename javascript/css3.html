@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>浮动安利</title>
+    <style>
+    body{
+        background-image: url("th.jpg");
+        background-size: contain;
+    }
+    #color{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(131, 31, 31);
+        }
+        #color1{
+            width: 400px;
+            height: 400px;
+            background-color: rgba(131, 31, 31,0.5);
+        }
+        .img{
+            opacity: 0;
+        }
+        #line{
+            width: 200px;
+            height: 60px;
+            background: linear-gradient(rgb(200, 255, 0),rgb(0, 255, 76),green);
+        }
+        #radius{
+            width: 400px;
+            height: 200px;
+            background: linear-gradient(#888,#333);
+            border: 2px #ff00ff solid;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+        <div id="color">
+            <img class="img" src="th.jpg">
+        </div>
+        <div id="color1"></div>
+        <div id="line"></div>
+        <div id="radius">圆角边框</div>
+</body>
+</html>

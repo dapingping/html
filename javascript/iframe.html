@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表格属性</title>
+    <style>
+        /* *是通配符，值所有 */
+
+        * {
+            font-family: 微软雅黑;
+            color: red;
+            font-size: 30px;
+        }
+
+        .font-color {
+            color: green;
+            font-size: 24px;
+        }
+
+        #top {
+            width: 500px;
+            height: 300px;
+            background: rgb(109, 250, 144);
+        }
+
+        tr {
+            background: rgb(177, 224, 255);
+        }
+
+        h1 span {
+            font-size: 50px;
+            color: #c8ff00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <iframe src="biaodan.html" width="400px" height="200px" frameborder="0"></iframe><br> -->
+
+    <p>一些旧的浏览器不支持 iframe。</p>
+    <p>如果浏览器不支持 iframes 则不会显示。</p>
+    <p class="font-color">内容测试</p>
+    <div id="top"></div>
+    <table>
+        <tr>
+            <td>颜色改变了</td>
+        </tr>
+    </table>
+    <h1>大标题</h1>
+    <span>第一层</span>
+    <h1>
+        <span>是否改变</span>
+    </h1>
+    <h1>
+        <h2>
+            <span>是否改变</span>
+        </h2>
+        </h1>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>定时器的作用</title>
+<script>
+function toDou(n)
+{
+    if(n<10)
+    {
+        return '0'+n;
+    }
+    else
+    {
+        return ''+n;
+    }
+}
+
+ window.onload=function()
+ {
+     var aImg=document.getElementsByTagName('img');
+    
+    function tick()
+    {
+        var oDate=new Date();
+    var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+    // alert(str);
+     for(var i=0;i<aImg.length;i++)
+     {
+         aImg[i].src=str.charAt(i)+'.png';
+     }
+    }
+    setInterval(tick,1000);
+    tick();
+ };
+</script>
+</head>
+<body style="background:black;color:aliceblue;font-size:44px;">
+    <img src="0.png"/>
+    <img src="1.png"/>
+    :
+    <img src="2.png"/>
+    <img src="0.png"/>
+    :
+    <img src="2.png"/>
+    <img src="5.png"/>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .box {
+            background: red;
+        }
+    </style>
+    <script>
+        function tored() {
+            var odiv = document.getElementById('div1');
+            odiv.className = 'box';
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="变红" onclick="tored()">
+    <div id="div1">
+
+    </div>
+</body>
+
+</html>

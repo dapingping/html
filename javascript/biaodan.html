@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表格属性</title>
+</head>
+
+<body style="font-family:宋体;font-size:24px;">
+    <table>
+        <form name="form1" action="function.html" method="post">
+            <th>登录页面</th>
+            <tr>
+                <td> 账号：</td>
+            </tr>
+            <tr>                
+                <td>
+                    <input name="usename" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="password" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input style="width:150px;height:24px;" type="button" value="登录">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    选择出生日期
+                    <select name="d1">
+                        <option value="1">1990</option>
+                        <option value="2">1991</option>
+                        <option value="3">1992</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    兴趣选择：篮球<input name="d1" type="radio" value="0"/>
+                    足球<input name="d1" type="radio" value="1"/>
+                    棒球<input name="d1" type="radio" value="2"/>
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        选择城市：北京<input name="c1" type="checkbox" value="0"/>
+                        上海<input name="c2" type="checkbox" value="1"/>
+                        广州<input name="c3" type="checkbox" value="2"/>
+                        <br>
+                        <input type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="submit" type="submit" value="提交">
+                        <input name="reset" type="reset" value="重置">
+                    </td>
+                </tr>
+        </form>
+    </table>
+
+</body>
+
+</html>

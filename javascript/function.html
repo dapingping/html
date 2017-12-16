@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+    <script>
+        function setcolor(color)
+        {
+            var odiv=document.getElementById('div1');
+            odiv.style.background=color;
+        }
+/*
+        function togreen() {
+            var odiv = document.getElementById('div1');
+            odiv.style.background = 'green';
+        }
+        function toyellow() {
+            var odiv = document.getElementById('div1');
+            odiv.style.background = 'yellow';
+        }     
+        function toblack() {
+            var odiv = document.getElementById('div1');
+            odiv.style.background = 'black';
+        }    
+        */
+    </script>
+</head>
+
+<body>
+    <input type="button" value="变绿" onclick="setcolor('green')">
+    <input type="button" value="变黄" onclick="setcolor('yellow')">
+    <input type="button" value="变黑" onclick="setcolor('black')">
+    <div id="div1">
+    </div>
+</body>
+
+</html>

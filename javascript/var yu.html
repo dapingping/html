@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>变量作用域</title>
+    <script>
+        // var a;       //全局变量
+        function aaa()      //父函数
+        {
+            a = 12;         //局部变量
+            function bbb()    //子函数
+            {
+                alert(a);
+            }
+            bbb();
+        }
+
+        aaa();
+        
+    </script>
+</head>
+
+</html>

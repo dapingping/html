@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>js第四个课时(runoob.com)</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            border: 1px rgb(0, 255, 64) solid;
+
+        }
+
+        .box {
+            background: red;
+        }
+    </style>
+    <script>
+        function tored() {
+            var odiv = document.getElementById('div1');
+            // odiv.style.background = 'red';
+            // alert(odiv.style.background);
+            odiv.className = 'box';
+        }
+
+        function togreen() {
+            var odiv = document.getElementById('div1');
+
+            odiv.style.background = 'green';
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="变红" onclick="tored()" />
+    <input type="button" value="变绿" onclick="togreen()" />
+    <div id="div1"></div>
+</body>
+
+</html>

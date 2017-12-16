@@ -1,0 +1,9 @@
+#tab li 
+{
+    width: 120px;
+    height: 150px;
+    border: 1px black solid;
+    margin: 10px;
+    float: left;
+    text-align: center;
+}

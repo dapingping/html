@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>深入JavaScript</title>
+    <script>
+    function sum()
+    {
+        // alert(arguments[0]);
+        //arguements
+        var result=0;
+        for(var i=0;i<arguments.length;i++)
+        {
+            result+=arguments[i];
+        }
+        return result;
+    }
+    alert(sum(12,8,7,9));
+    </script>
+</head>
+</html>
