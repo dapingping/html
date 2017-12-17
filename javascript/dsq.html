@@ -5,22 +5,16 @@
     <meta charset="utf-8">
     <title>定时器的作用</title>
     <script>
-        // function show() 
-        // {
-        //     alert('a');
-        // }
-
-        // setTimeout (show, 1000);
         window.onload = function () {
             var obtn1 = document.getElementById('btn1');
             var obtn2 = document.getElementById('btn2');
-            var timer = null;
+            var timer;
             obtn1.onclick = function () 
             {
                 timer = setInterval(function () 
                 {
                     alert('a');
-                }, 1000);
+                }, 3000);
 
             };
 
