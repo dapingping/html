@@ -3,19 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <title>定时器的作用</title>
+    <title>显示当前时间</title>
     <script>
-       function show(x) 
-        {
-            var xr=getDay;
-
-            alert('x');
+        window.onload= myVar=setInterval(function(){myTimer()},1000);
+        function myTimer(){
+            // console.log("my time");
+            var d=new Date();
+            var t=d.toString();
+            document.getElementById("di").innerHTML=t;
         }
-
-        
     </script>
 </head>
+
 <body>
-    
+<div id="di"></div>
 </body>
+
 </html>
