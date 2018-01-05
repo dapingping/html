@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title href="www.wolaidai.com">wolaidai</title>
+    <script>
+        function changelink() 
+        {
+            document.getElementById('demo').innerHTML = "v";
+            document.getElementById('demo').href = "https://v.qq.com/";
+            document.getElementById('demo').target = '_blank';
+
+        }
+    </script>
+</head>
+
+<body>
+    <a id="demo" href="http://www.runoob.com">runoob</a>
+    <input type="button" onclick="changelink()" value="changelink" />
+</body>
+
+</html>
